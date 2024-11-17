@@ -4,7 +4,7 @@
     --secondary-color: #f4f4f4;
     --accent-color: #8c52ff;
     --text-color: #333;
-    --background-color: #fff;
+    --background-color: #cecece;
 }
 
 /* Base Styles */
@@ -73,8 +73,14 @@ header nav ul li a:hover {
 /* Hero Section */
 #hero {
     text-align: center;
-    padding: 100px 0;
-    background-color: var(--secondary-color);
+    padding: 120px 0;
+    position: relative; /* Per posizionare il testo sopra l'immagine */
+    height: 100vh; /* L'altezza occupa tutta la finestra */
+    background: url('images/hero-image.jpg') no-repeat center center;
+    background-size: cover; /* L'immagine copre l'intera area senza deformarsi */
+    color: white; /* Colore del testo */
+    text-align: center; /* Centra il testo orizzontalmente */
+    height: 30vh;
 }
 
 /* CSS Keyframe Animations */
@@ -88,13 +94,14 @@ header nav ul li a:hover {
 
 #hero h1 {
     animation: fadeInUp 1.5s ease-out;
+    color: white;
 }
 
 /* Buttons */
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: var(--accent-color);
+    
     color: var(--background-color);
     text-decoration: none;
     border-radius: 5px;
@@ -117,6 +124,10 @@ section {
     padding: 20px;
 }
 
+.instrument-images {
+
+    width: 20%;
+}
 /* Instrument List */
 .instrument-list {
     display: flex;
@@ -223,7 +234,7 @@ footer {
 
 /* Flexible Images */
 .responsive-img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
