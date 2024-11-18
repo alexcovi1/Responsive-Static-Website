@@ -1,10 +1,10 @@
 /* Variables */
 :root {
-    --primary-color: #1a1a1a;
+    --primary-color: #000000;
     --secondary-color: #f4f4f4;
     --accent-color: #8c52ff;
     --text-color: #333;
-    --background-color: #cecece;
+    --background-color: #ebebeb;
 }
 
 /* Base Styles */
@@ -75,12 +75,12 @@ header nav ul li a:hover {
     text-align: center;
     padding: 120px 0;
     position: relative; /* Per posizionare il testo sopra l'immagine */
-    height: 100vh; /* L'altezza occupa tutta la finestra */
+    height: 30vh; /* L'altezza occupa tutta la finestra */
     background: url('images/hero-image.jpg') no-repeat center center;
     background-size: cover; /* L'immagine copre l'intera area senza deformarsi */
     color: white; /* Colore del testo */
-    text-align: center; /* Centra il testo orizzontalmente */
-    height: 30vh;
+  
+  
 }
 
 /* CSS Keyframe Animations */
@@ -95,6 +95,56 @@ header nav ul li a:hover {
 #hero h1 {
     animation: fadeInUp 1.5s ease-out;
     color: white;
+}
+
+/* Sezione principale */
+#featured-work {
+    display: flex; /* Flexbox per centrare il contenuto */
+    flex-direction: column; /* Disposizione verticale */
+    align-items: center; /* Centra gli elementi orizzontalmente */
+    justify-content: center; /* Centra gli elementi verticalmente */
+    min-height: 100vh; /* La sezione occupa l'intera altezza della finestra */
+    padding: 20px; /* Spaziatura interna */
+    color: white; /* Colore del testo */
+    text-align: center; /* Testo centrato */
+}
+
+/* Titolo */
+#featured-work h2 {
+    font-size: 2rem; /* Dimensione del titolo */
+    margin-bottom: 20px; /* Spazio sotto il titolo */
+}
+
+/* Composizione */
+.composition {
+    width: 90%; /* Larghezza responsiva */
+    max-width: 600px; /* Larghezza massima per schermi grandi */
+    margin: 0 auto; /* Centra il contenitore */
+    padding: 20px; /* Spaziatura interna */
+    border-radius: 10px; /* Angoli arrotondati */
+   
+}
+
+/* Testo del paragrafo */
+.composition p {
+    font-size: 1rem; /* Dimensione del testo */
+    line-height: 1.5; /* Altezza della linea per leggibilità */
+    margin-bottom: 15px; /* Spaziatura sotto il testo */
+}
+
+/* Immagine responsiva */
+.responsive-img {
+    width: 100%; /* Immagine si adatta al contenitore */
+    height: auto; /* Mantiene le proporzioni */
+    border-radius: 8px; /* Angoli arrotondati */
+    margin-bottom: 15px; /* Spaziatura sotto l'immagine */
+}
+
+/* Titolo della composizione */
+.composition h3 {
+    font-size: 1.5rem; /* Dimensione del titolo */
+    color: white; /* Colore del testo */
+    margin: 0; /* Nessuno spazio extra */
 }
 
 /* Buttons */
@@ -118,15 +168,28 @@ section {
     margin-bottom: 40px;
 }
 
-/* CSS Relative Position */
-#instruments {
-    position: relative;
-    padding: 20px;
+
+.image-carousel {
+    width: 100%;
+    overflow-x: scroll; 
+    white-space: nowrap; 
+    scroll-behavior: smooth; 
+    border: 2px solid #ccc; 
+    padding: 10px 0; 
 }
 
-.instrument-images {
 
-    width: 20%;
+.carousel-track {
+    display: inline-block; 
+}
+
+/* Immagini del carosello */
+.carousel-track img {
+    width: 50%; 
+    height: auto; 
+    margin-right: 10px; 
+    display: inline-block; 
+    border-radius: 8px; 
 }
 /* Instrument List */
 .instrument-list {
@@ -302,11 +365,17 @@ h3 {
     nav ul {
         flex-direction: column;
         align-items: center;
+        max-height: 30vh;
     }
 
     nav ul li {
         margin: 5px 0;
     }
+    
+    #featured-work{
+        display: inline-block;
+    }
+  
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
