@@ -28,6 +28,7 @@ main {
 /* Typography */
 h1, h2, h3 {
     color: var(--primary-color);
+    font-family: a;
 }
 
 /* Links */
@@ -37,8 +38,8 @@ a {
 }
 
 /* Advanced CSS Selector (Attribute Selector) */
-a[href^="#"] {
-    color: var(--accent-color);
+a[href^="https://www.youtube.com/watch?v=KbYgRXJmi6k" ] {
+    color:blueviolet;
 }
 
 /* Header and Navigation */
@@ -74,12 +75,11 @@ header nav ul li a:hover {
 #hero {
     text-align: center;
     padding: 120px 0;
-    position: relative; /* Per posizionare il testo sopra l'immagine */
-    height: 30vh; /* L'altezza occupa tutta la finestra */
+    position: relative; 
+    height: 30vh; 
     background: url('images/hero-image.jpg') no-repeat center center;
-    background-size: cover; /* L'immagine copre l'intera area senza deformarsi */
-    color: white; /* Colore del testo */
-  
+    background-size: cover; 
+    color: white;  
   
 }
 
@@ -151,7 +151,6 @@ header nav ul li a:hover {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    
     color: var(--background-color);
     text-decoration: none;
     border-radius: 5px;
@@ -176,6 +175,7 @@ section {
     scroll-behavior: smooth; 
     border: 2px solid #ccc; 
     padding: 10px 0; 
+    border: none;
 }
 
 
@@ -214,6 +214,17 @@ section {
     margin-right: 5px;
 }
 
+.image-carousel h3::before {
+    content: "♪";
+    color: var(--accent-color);
+    margin-right: 5px;
+    
+}
+.image-carousel h3::after {
+    content: "♪";
+    color: var(--accent-color);
+    margin-left: 5px;
+}
 /* Portfolio Grid */
 .portfolio-grid {
     display: grid;
@@ -357,17 +368,18 @@ h3 {
         font-size: 14px;
     }
 
-    .portfolio-grid,
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
     nav ul {
         flex-direction: column;
         align-items: center;
         max-height: 30vh;
     }
 
+    .portfolio-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+  
     nav ul li {
         margin: 5px 0;
     }
