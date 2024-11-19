@@ -21,14 +21,48 @@
 
     <main>
         <section id="gallery">
-            <h1>Photo Gallery</h1>
+            <h1 style="text-align: center;">Photo Gallery</h1>
             <div class="gallery-grid">
-                <img src="https://via.placeholder.com/300x200" alt="Harmony playing piano" class="gallery-img">
-                <img src="https://via.placeholder.com/300x200" alt="Harmony with violin" class="gallery-img">
-                <img src="https://via.placeholder.com/300x200" alt="Harmony composing" class="gallery-img">
-                <img src="https://via.placeholder.com/300x200" alt="Harmony in concert" class="gallery-img">
-                <img src="https://via.placeholder.com/300x200" alt="Harmony with cello" class="gallery-img">
-                <img src="https://via.placeholder.com/300x200" alt="Harmony in recording studio" class="gallery-img">
+                <picture>
+                    <source srcset="images/piano-image.jpg 2x, images/piano-image.jpg 1x" 
+                            sizes="(min-width: 768px) 30vw, 100vw">
+                    <img src="images/piano-image.jpg" 
+                         alt="a image of a piano" 
+                         class="gallery-img" 
+                         loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/trumpet-image.jpg 2x, images/trumpet-image.jpg 1x" 
+                            sizes="(min-width: 768px) 30vw, 100vw">
+                    <img src="images/trumpet-image.jpg" 
+                         alt="a image of a trumpet" 
+                         class="gallery-img" 
+                         loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/violin2-image.jpg 2x, images/violin2-image.jpg 1x" 
+                            sizes="(min-width: 768px) 30vw, 100vw">
+                    <img src="images/violin2-image.jpg" 
+                         alt="a image of a violin" 
+                         class="gallery-img" 
+                         loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/cello2-image.jpg 2x, images/cello2-image.jpg 1x" 
+                            sizes="(min-width: 768px) 30vw, 100vw">
+                    <img src="images/cello2-image.jpg" 
+                         alt="a image of a cello" 
+                         class="gallery-img" 
+                         loading="lazy">
+                </picture>
+                <picture>
+                    <source srcset="images/foto-armony.jpg 2x, images/foto-armony.jpg 1x" 
+                            sizes="(min-width: 768px) 30vw, 100vw">
+                    <img src="images/foto-armony.jpg" 
+                         alt="Harmony playing cello" 
+                         class="gallery-img" 
+                         loading="lazy">
+                </picture>
             </div>
         </section>
     </main>
