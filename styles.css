@@ -99,48 +99,36 @@ header nav ul li a:hover {
 
 
 /* Sezione principale */
-.featured-work {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+/* Wrapper for centering */
+.wrapper {
+    display: flex;
     justify-content: center; 
-    min-height: 100vh; 
-    padding: 20px; 
-    color: white; 
-    text-align: center; 
-}
-
-/* Titolo */
-.featured-work h2 {
-    font-size: 2rem;
-    margin-bottom: 20px; 
-}
-
-/* Composizione */
-.composition {
-    width: 90%; 
-    max-width: 600px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    border-radius: 10px; 
+    align-items: center;    
+    min-height: 100vh;      
    
 }
 
-/* Testo del paragrafo */
-.composition p {
-    font-size: 1rem; 
-    line-height: 1.5; 
-    margin-bottom: 15px; 
+/* Style for the featured section */
+.featured-work {
+    text-align: center;
+    max-width: 600px;        
+    padding: 20px;
+    border-radius: 10px;
+    color: white;            
 }
 
-/* Immagine responsiva */
+/* Composition specific styling */
+.composition {
+    margin-top: 20px;
+}
+
+/* Responsive image styling */
 .responsive-img {
-    width: 100%; 
+    width: 100%;
     height: auto; 
-    border-radius: 8px; 
-    margin-bottom: 15px; 
+    border-radius: 10px;
+    margin-top: 10px;
 }
-
 /* Titolo della composizione */
 .composition h3 {
     font-size: 1.5rem; 
