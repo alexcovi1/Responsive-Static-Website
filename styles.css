@@ -83,6 +83,10 @@ header nav ul li a:hover {
   
 }
 
+#hero h1 {
+    animation: fadeInUp 1.5s ease-out;
+    color: white;
+}
 /* CSS Keyframe Animations */
 @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(20px); }
@@ -92,13 +96,10 @@ header nav ul li a:hover {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-#hero h1 {
-    animation: fadeInUp 1.5s ease-out;
-    color: white;
-}
+
 
 /* Sezione principale */
-#featured-work {
+.featured-work {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
@@ -110,7 +111,7 @@ header nav ul li a:hover {
 }
 
 /* Titolo */
-#featured-work h2 {
+.featured-work h2 {
     font-size: 2rem;
     margin-bottom: 20px; 
 }
@@ -399,5 +400,107 @@ h3 {
 @media screen and (min-width: 1025px) {
     body {
         font-size: 16px;
+    }
+}
+
+/* Smartphone Styles */
+@media screen and (max-width: 480px) {
+    #hero {
+        height: 40vh;
+        padding: 60px 0;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .videos {
+        flex-direction: column;
+    }
+
+    .featured-work {
+        min-height: auto;
+        padding: 10px;
+    }
+
+    .featured-work h2 {
+        font-size: 1.5rem;
+    }
+
+    .composition {
+        width: 100%;
+    }
+
+    .responsive-img {
+        margin-top: 3%;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #hero {
+        height: 35vh;
+        padding: 80px 0;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .videos {
+        flex-direction: column;
+    }
+
+    .featured-work {
+        min-height: 50vh;
+        padding: 15px;
+    }
+
+    .featured-work h2 {
+        font-size: 1.75rem;
+    }
+
+    .composition {
+        width: 90%;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 769px) {
+    #hero {
+        height: 30vh;
+        padding: 120px 0;
+    }
+
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    .videos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .featured-work {
+        width: 48%;
+    }
+
+    .composition {
+        width: 100%;
+    }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1200px) {
+    #hero {
+        height: 40vh;
+    }
+
+    #hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .featured-work h2 {
+        font-size: 2.25rem;
     }
 }
